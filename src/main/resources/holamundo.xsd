@@ -4,6 +4,9 @@
     <xs:element name="getHolaMundoResponse" type="tns:getHolaMundoResponse"/>
 
     <xs:complexType name="getHolaMundoRequest">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+        </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="getHolaMundoResponse">

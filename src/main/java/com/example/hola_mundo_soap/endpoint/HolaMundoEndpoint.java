@@ -16,7 +16,7 @@ public class HolaMundoEndpoint {
     @ResponsePayload
     public GetHolaMundoResponse getHolaMundo(@RequestPayload GetHolaMundoRequest request) {
         GetHolaMundoResponse response = new GetHolaMundoResponse();
-        response.setMensaje("Hola Mundo");
+        response.setMensaje("Hola, " + request.getNombre() + "!");
 
         return response;
     }
