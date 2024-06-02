@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.ejemplo.com/holamundosoap" targetNamespace="http://www.ejemplo.com/holamundosoap" elementFormDefault="qualified">
+    <xs:element name="getHolaMundoRequest" type="tns:getHolaMundoRequest"/>
+    <xs:element name="getHolaMundoResponse" type="tns:getHolaMundoResponse"/>
+
+    <xs:complexType name="getHolaMundoRequest">
+    </xs:complexType>
+
+    <xs:complexType name="getHolaMundoResponse">
+        <xs:sequence>
+            <xs:element name="mensaje" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
